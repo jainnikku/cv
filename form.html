@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <style>
+            .bar{
+                -webkit-appearance: none;
+                width: 120px;
+                height: 15px;
+                background: #df0f0f;
+                outline: none;
+                opacity: 0.7;
+               -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+            .bar:hover{
+                opacity:1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Fill out the form for query: </h2>
+        <form>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname">
+            <br>
+            <label for="ename">Email Address: </label>
+            <input type="text" id="ename" >
+            <p>Your query is about:</p>
+            <input type="radio" id="webd" name="fav_launguage" value="Web Development">
+            <label for="webd">Web Development</label>
+            <input type="radio" id="prog" name="fav_launguage" value="Programming Languages">
+            <label for="prog">Programming Languages</label>
+            <input type="radio" id="oth" name="fav_launguage" value="others">
+            <label for="oth">others</label>
+            <p>Describe your Query Below:</p>
+            <textarea name="message" rows="15" cols="30"></textarea><br>
+            The above information filled By me is correct--  
+            <input type="checkbox"><br>
+            Rate my Work:
+            <input type="range" min="1" max="100" class="bar" value="50"><br>
+            <input type="submit">
+        </form>    
+    </body>
+</html>    
