@@ -16,7 +16,7 @@ body{
     padding: 0;
 }
 #logo-img{
-    background:url("/New folder/restrau1.png") no-repeat ;
+    background:url("/restrau1.png");
     width: 150px;
     height: 145px;
 }
