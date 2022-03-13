@@ -71,6 +71,7 @@ body{
 }
 #home-tiles{
     margin-top:15px;
+    margin-right:0;
 }
 
 #menu-tile,#special-tile,#map-tile{
