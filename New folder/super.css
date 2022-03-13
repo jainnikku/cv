@@ -54,7 +54,7 @@ body{
 .phone{
     text-align: center;
     background-position: center;
-    width: 96.5%;
+    width: 94%;
     height:40px;
     margin:20px;
 
@@ -252,6 +252,9 @@ video{
     }
 }
 @media  screen and (max-width:576px) {
+    body{
+        overflow-x:hidden;
+    }    
     .menu-item-photo{
         margin-right:auto;
     }
