@@ -54,10 +54,8 @@ body{
 .phone{
     text-align: center;
     background-position: center;
-    width: 94%;
     height:40px;
     margin:20px;
-
     background-color:#f6b319;
 }
 .phone a{
@@ -71,6 +69,10 @@ body{
     background-color: darkgoldenrod;
     text-align: center;
 }
+#home-tile{
+    margin-top:15px;
+}
+
 #menu-tile,#special-tile,#map-tile{
     height: 250px;
     width:100%;
@@ -264,4 +266,7 @@ video{
     .menu-item-description{
         text-align: center;
     }
+    #home-tile div{
+        margin-right:0;
+    }    
 }
