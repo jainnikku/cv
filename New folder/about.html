@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a href="live.html" class="navbar-brand float-md-start">
                     <div id="logo-img" alt="Logo image"></div>
@@ -43,18 +43,27 @@
                         </li>
                         <li class="nav-item">
                             <div class="btn">
-                                <a class="nav-link" href="tel:410-602-5008">410-602-5008<span>*We Deliever</span></a>
+                                <a class="nav-link" href="tel:8107066954">8107066954<span>*We Deliever</span></a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-gear-fill"></i> Setting
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" onclick="theme_change()" href="#"><i class="bi bi-circle-half"></i> Theme</a></li>
-                            <li><a class="dropdown-item" href="#">Permission</a></li>
-                            <li><a class="dropdown-item" href="#">Location</a></li>
-                            <li><a class="dropdown-item" href="#">Update</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        <i class="bi bi-circle-half"></i> Theme &raquo; 
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a class="dropdown-item" onclick="theme_change('black')" href="#">Dark</a></li>
+                                        <li><a class="dropdown-item" onclick="theme_change('white')" href="#">Light</a></li>
+                                        <li><a class="dropdown-item" onclick="theme_change('#61122f')" href="#">original</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Permission</a></li>
+                                <li><a class="dropdown-item" href="#">Location</a></li>
+                                <li><a class="dropdown-item" href="#">Update</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -132,11 +141,10 @@
         <script>
             function changeColor(color) {
                 document.body.style.background = color;
-                documnet.body.style.color=green;
             }
               
-            function theme_change() {
-                changeColor('white');
+            function theme_change(color) {
+                changeColor(color);
             }         
         </script> 
     </body>
