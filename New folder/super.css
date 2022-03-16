@@ -51,6 +51,9 @@ body{
     font-size: 55%;
     color:white;
 }
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+}
 .phone{
     text-align: center;
     background-position: center;
@@ -252,6 +255,19 @@ video{
 @media screen and (min-width:992px){
     .phone{
         display:none;
+    }
+    .dropdown-menu li {
+        position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+        right: 100%;
+        left: auto;
     }
 }
 @media  screen and (max-width:576px) {
