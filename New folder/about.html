@@ -145,6 +145,15 @@
               
             function theme_change(color) {
                 changeColor(color);
+                if(color==="white"){
+                    document.getElementById("section1").style.color="black";
+                }
+                if(color==="black"){
+                    document.getElementById("section1").style.color="white";
+                }
+                if(color==="#61122f"){
+                    document.getElementById("section1").style.color="white";
+                }
             }         
         </script> 
     </body>
