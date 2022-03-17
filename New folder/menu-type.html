@@ -76,7 +76,7 @@
         <div class="phone"><a class="nav-link" href="tel:410-602-5008"><i class="bi bi-telephone-fill"></i> 410-602-5008<span>*We Deliever</span></a></div>
         <div id="main-content" class="container">
             <h2 id="Menu-categories-title" class="text-center">Menu Categories</h2>
-            <div class="text-center">
+            <div class="text-center" id="c1">
                 Substituting white rice with brown rice or fried rice after 3:00pm
                  will be $1.50 for a pint and $2.50 for a quart.
             </div>
@@ -214,7 +214,20 @@
               
             function theme_change(color) {
                 changeColor(color);
-            }         
+                if(color==="white"){
+                    document.getElementById("c1").style.color="black";
+                    document.getElementById("Menu-categories-title").style.color="black";
+
+                }
+                if(color==="black"){
+                    document.getElementById("c1").style.color="white";
+                    document.getElementById("Menu-categories-title").style.color="white";
+                }
+                if(color==="#61122f"){
+                    document.getElementById("c1").style.color="white";
+                    document.getElementById("Menu-categories-title").style.color="white";
+                }
+            }        
         </script> 
     </body>
     
