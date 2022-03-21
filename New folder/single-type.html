@@ -264,40 +264,34 @@
               
             function theme_change(color) {
                 changeColor(color);
-                if(color=="white"){
-                    document.getElementById("c1").style.color="black";
-                    document.getElementById("Menu-categories-title").style.color="black";
-                    var ele=document.getElementsByClassName("menu-item-description");
-                    var eli=document.getElementsByClassName("menu-item-price");
+                if(color==="white"){
+                    
+                    
+                    var ele=document.getElementsByClassName("container");
                     for(let i=0;i<=6;i++){
-                        ele[i].style.color='white';
-                        eli[i].style.color='white';
-                       
+                        ele[i].style.color='black';
+                        console.log(i);
                     }
                 }
-                if(color=="black"){
-                    document.getElementById("c1").style.color="white";
-                    document.getElementById("Menu-categories-title").style.color="white";
-                    var ele=document.getElementsByClassName("menu-item-description");
-                    var eli=document.getElementsByClassName("menu-item-price");
+                if(color==="black"){
+                    
+                    
+                    var ele=document.getElementsByClassName("container");
                     for(let i=0;i<=6;i++){
                         ele[i].style.color='white';
-                        eli[i].style.color='white';
-                        
+                        console.log(i);
                     }
                 }
-                if(color=="#61122f"){
-                    document.getElementById("c1").style.color="white";
-                    document.getElementById("Menu-categories-title").style.color="white";
-                    var ele=document.getElementsByClassName("menu-item-description");
-                    var eli=document.getElementsByClassName("menu-item-price");
+                if(color==="#61122f"){
+                   
+                    
+                    var ele=document.getElementsByClassName("container");
                     for(let i=0;i<=6;i++){
                         ele[i].style.color='white';
-                        eli[i].style.color='white';
-                        
+                        console.log(i);
                     }
                 }
-            }       
+            }      
         </script>
     </body>
     
